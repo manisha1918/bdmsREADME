@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Panel</title>
+<style>
+body{
+	margin:0px;
+	border:0px;
+}
+#header{
+	width: 100%;
+	height:120px;
+	background: black;
+	color:white;
+}
+#sidebar{
+	width: 250px;
+	height: 600px;
+	background:red ;
+	float: left;
+}
+#data{
+	height: 700px;
+	background: white;
+	overflow-y: scroll;
+}
+ a:link, a:visited {
+    	background-color: red;
+    	color: black;
+    	text-align:center;
+    	text-decoration: none;
+    	display: inline-block;
+    }
+
+a:hover, a:active {
+	background-color: white;
+}
+ul li{
+	list-style-type: none;
+	padding :20px;
+	display: block;
+	border-bottom: 1px solid black;
+}
+
+
+</style>
+</head>
+<body>
+	<div id="header">
+		<div style="margin-left: 90%"><br><a href="home_page.html">Logout</a></div>
+		<center><h2>WELCOME ADMIN!!</h2></center>
+	</div>
+
+<div id="sidebar">
+<ul>
+	<li><a href = "donors.php">DONORS</a></li><br>
+    <li><a href = "donations.php">DONATIONS</a></li><br>
+    <li><a href = "stock.php">STOCK DETAILS</a></li><br>
+    <li><a href = "blood_banks.php">BLOOD BANKS</a></li><br>
+    <li><a href = "orgs.php">ORGANIZATIONS</a></li><br>
+    <li><a href = "camps.php">BLOOD CAMPS</a></li>
+     <li><a href = "orders.php">ORDERS</a></li>
+    <li><a href = "hospitals.php">HOSPITALS</a></li>
+</ul>
+
+</div>
+
+    <div id="data">
+    	<center><div>
+    		<h1>Add:</h1>
+	<form method="post" action="p2.php">
+	<table>
+		<tr>
+			<td width="200px" height="50px">Bank_id:</td>
+			<td width="200px" height="50px"><input type="text" name="bank_id"></td>
+		</tr>
+		<tr>
+			<td width="200px" height="50px">Donor_id:</td>
+			<td width="200px" height="50px"><input type="text" name="donor_id"></td>
+		</tr>
+		<tr>
+			<td width="200px" height="50px">Units:</td>
+			<td width="200px" height="50px"><input type="text" name="units"></td>
+		</tr>
+		<tr>
+			<td width="200px" height="50px">Blood Group:</td>
+			<td width="200px" height="50px">
+				<select name="bloodgrp">
+					<option>O+</option>
+					<option>O-</option>
+					<option>A+</option>
+					<option>A-</option>
+					<option>B+</option>
+					<option>B-</option>
+					<option>AB+</option>
+					<option>AB-</option>
+			    </select>
+			</td>
+	    </tr>
+		<tr>
+			<td width="200px" height="50px">Issue Date:</td>
+			<td width="200px" height="50px"><input type="text" name="issue_date" placeholder="yyyy-mm-dd"></td>
+		</tr>
+		<tr>
+			<td width="200px" height="50px">Expiry Date:</td>
+			<td width="200px" height="50px"><input type="text" name="expiry_date" placeholder="yyyy-mm-dd"></td>
+		</tr>
+		
+	</table><br>
+	
+	<div><br><h4 align="center"></h4></div>
+		<tr>
+			<td><center><input type="Submit" id="but" name="add" value="Add"><center></td>
+		</tr>
+	</div>
+</form>
+    	
+    	
+    </div>
+
+</body>
+</html>

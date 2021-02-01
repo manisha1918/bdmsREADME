@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homepage</title>
+	<link rel="stylesheet" href="style1.css">
+<style>
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown:hover .dropbtn {
+  background-color: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}	
+
+
+</style>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+		<div class="logo">
+			<img src="images/logo.png" alt="">
+		</div>
+		<ul class="nav-area">
+			<li><a href="#">Home</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><div class="dropdown">
+                <button class="dropbtn">Services 
+                <i class="fa fa-caret-down"></i>
+                </button>
+               <div class="dropdown-content">
+               <a href="bbinfo.php">Blood Banks</a>
+               <a href="bcinfo.php">Blood Camps</a></li>
+
+            <li><div class="dropdown">
+                <button class="dropbtn">Login 
+                <i class="fa fa-caret-down"></i>
+                </button>
+               <div class="dropdown-content">
+            <a href="login.html">Admin Login</a>
+            <a href="hosp_reg.html">Hospital Login</a></li>
+        </ul>
+    </div>
+
+    <div class="welcome-text">
+    	<h1>Save a Life!!</h1>
+    	<a href="donor_reg.html">REGISTER</a>
+    	
+    </div>
+	</header>
+
+</body>
+</html>
